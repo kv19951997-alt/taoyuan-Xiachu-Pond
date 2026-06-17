@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>下厝埤介紹網站</title>
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+  body{
+    margin:0;
+    font-family:Arial;
+    background: linear-gradient(to bottom, #1b4332, #2d6a4f, #1f5e3b);
+    color:white;
+    padding-top:60px;
+  }
+
+  .navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(20,60,30,0.95);
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:10px;
+    z-index:999;
+  }
+
+  .navbar a{
+    color:white;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:8px;
+    background:#2e7d32;
+    font-size:14px;
+  }
+
+  .card{
+    max-width:900px;
+    margin:20px auto;
+    background:rgba(0,0,0,0.35);
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter:blur(6px);
+    line-height:1.9;
+  }
+
+  h1{
+    text-align:center;
+  }
+
+  h2{
+    border-left:6px solid #66bb6a;
+    padding-left:10px;
+  }
+
+  img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:10px;
+  }
+
+  /* 🍃 葉子動畫 */
+  .leaf{
+    position:fixed;
+    top:-50px;
+    width:20px;
+    height:20px;
+    background:url("https://upload.wikimedia.org/wikipedia/commons/3/36/Leaf_icon_15.svg");
+    background-size:cover;
+    animation:fall linear infinite;
+    opacity:0.7;
+  }
+
+  @keyframes fall{
+    0%{transform:translateY(-10vh) rotate(0deg);}
+    100%{transform:translateY(110vh) rotate(360deg);}
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html">🏠 首頁</a>
+  <a href="history.html">📖 歷史</a>
+  <a href="geography.html">🌄 地景</a>
+  <a href="change.html">🔄 變化</a>
+  <a href="environment.html">🌱 環境</a>
+  <a href="plants.html">🌿 植物</a>
+  <a href="insects.html">🐛 動物</a>
+  <a href="game.html">🎮 互動</a>
+</div>
+
+<h1>🌿 下厝埤介紹網站</h1>
+
+<!-- 🧠 研究動機 -->
+<div class="card">
+<h2>🧠 研究動機</h2>
+
+<p>
+因為我本身是桃園人，在生活中經常接觸到埤塘這種特殊的水域環境。
+在觀察下厝埤的過程中，我發現它不只是普通水池，而是具有歷史、地景與生態價值的重要空間。
+</p>
+</div>
+
+<!-- 📖 介紹 -->
+<div class="card">
+<h2>📖 埤塘介紹</h2>
+<p>
+下厝埤位於桃園青埔地區，是桃園台地重要埤塘之一。
+</p>
+</div>
+
+<!-- 🎯 研究目的 -->
+<div class="card">
+<h2>🎯 研究目的</h2>
+
+<p>
+1. 了解下厝埤<br>
+2. 分析水利系統<br>
+3. 探討生態<br>
+4. 觀察變遷<br>
+5. 建立保育觀念
+</p>
+</div>
+
+<hr>
+
+<h2>🌄 埤塘景觀</h2>
+<img src="images/pond.png">
+
+<h2>🗺 地理位置</h2>
+<img src="images/map.png">
+
+<hr>
+
+<!-- 📌 總結（只保留一個！） -->
+<div class="card">
+<h2>📌 網站總結</h2>
+
+<p>
+本網站透過歷史、地景、生態與變遷等面向，
+完整呈現下厝埤的自然與人文價值。
+</p>
+</div>
+
+<!-- 👩‍💻 作者 -->
+<div class="card">
+<h2>👩‍💻 網站資訊</h2>
+
+<p style="text-align:center;">
+網站創作者：劉沛穎、廖晴儀
+</p>
+
+<p style="text-align:center;">
+📍 本作品為學校專題用途
+</p>
+</div>
+
+<!-- 🍃 葉子動畫 -->
+<div class="leaf" style="left:10%; animation-duration:6s;"></div>
+<div class="leaf" style="left:25%; animation-duration:8s;"></div>
+<div class="leaf" style="left:40%; animation-duration:7s;"></div>
+<div class="leaf" style="left:60%; animation-duration:9s;"></div>
+<div class="leaf" style="left:80%; animation-duration:6.5s;"></div>
+
+</body>
+</html>
