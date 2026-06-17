@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>下厝埤植物生態介紹</title>
+
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1b4332, #2d6a4f, #1f5e3b);
+    color: white;
+    padding-top: 60px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(20, 60, 30, 0.95);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #2e7d32;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+
+  .navbar a:hover {
+    background: #66bb6a;
+    transform: translateY(-2px);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    border-left: 6px solid #66bb6a;
+    padding-left: 10px;
+  }
+
+  .card {
+    background: rgba(0,0,0,0.35);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px auto;
+    max-width: 900px;
+    backdrop-filter: blur(6px);
+  }
+
+  p {
+    line-height: 1.9;
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .leaf {
+    position: fixed;
+    top: -50px;
+    width: 22px;
+    height: 22px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Leaf_icon_15.svg");
+    background-size: cover;
+    animation: fall linear infinite;
+    opacity: 0.8;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(-10vh) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html">🏠 首頁</a>
+  <a href="history.html">📖 歷史</a>
+  <a href="geography.html">🌄 地景</a>
+  <a href="change.html">🔄 變化</a>
+  <a href="environment.html">🌱 環境</a>
+  <a href="plants.html">🌿 植物</a>
+  <a href="insects.html">🐛 動物</a>
+  <a href="game.html">🎮 互動</a>
+</div>
+
+<h1>🌿 下厝埤植物生態完整介紹</h1>
+
+<div class="card">
+<p>
+下厝埤屬於埤塘型濕地生態系，長期維持穩定水域環境，
+因此能孕育多樣化的水生與濕生植物。
+這些植物並非單純的景觀元素，而是在整個生態系中扮演基礎角色，
+負責進行光合作用、提供氧氣來源，並維持水域能量循環。
+</p>
+
+<p>
+此外，植物的存在也直接影響水質變化。
+透過吸收水中養分、減少藻類過度繁殖，以及穩定水溫，
+使整體環境更加適合魚類、昆蟲與兩棲類生存。
+</p>
+
+<p>
+因此，下厝埤的植物不只是自然景觀的一部分，
+更是維持整體生態平衡不可或缺的核心基礎。
+</p>
+</div>
+
+<!-- 睡蓮 -->
+<div class="card">
+<h2>🌸 睡蓮</h2>
+<img src="images/睡蓮.jfif">
+<p>
+睡蓮是典型的浮葉型水生植物，葉片漂浮於水面，
+具有遮光與降溫效果，可有效減少藻類過度生長。
+</p>
+<p>
+同時，睡蓮的花朵具有高度觀賞性，但在生態功能上更重要的是提供遮蔽，
+讓小型魚類與昆蟲能躲避掠食者，增加生存機率。
+</p>
+<p>
+睡蓮通常出現在水質較穩定的環境，因此也常被視為水域健康的重要指標。
+</p>
+</div>
+
+<!-- 浮萍 -->
+<div class="card">
+<h2>🍃 浮萍</h2>
+<img src="images/浮萍.jpg">
+<p>
+浮萍是一種極小型漂浮植物，具有非常快速的繁殖能力，
+能在短時間內覆蓋大片水面。
+</p>
+<p>
+它可以吸收水中的氮與磷，減少水體優養化問題，
+在自然淨化系統中扮演重要角色。
+</p>
+<p>
+同時浮萍也是微生物與小型水生生物的棲息基礎，
+在食物鏈中屬於最前端的能量來源。
+</p>
+</div>
+
+<!-- 蘆葦 -->
+<div class="card">
+<h2>🌾 蘆葦</h2>
+<img src="images/蘆葦.webp">
+<p>
+蘆葦多生長於埤塘邊緣，是典型的濕地挺水植物，
+具有發達根系，可以穩定土壤並防止水岸侵蝕。
+</p>
+<p>
+蘆葦叢形成天然屏障，不僅能減緩水流速度，
+還能提供鳥類築巢、昆蟲躲藏與兩棲類活動空間。
+</p>
+<p>
+此外，蘆葦也能過濾水中懸浮物，對水質改善具有正面影響。
+</p>
+</div>
+
+<!-- 水丁香 -->
+<div class="card">
+<h2>🌿 水丁香</h2>
+<img src="images/水丁香.jpg">
+<p>
+水丁香常見於靜水或緩流水域，具有良好的環境適應能力，
+能在水位變動的環境中穩定生長。
+</p>
+<p>
+它可提供昆蟲停棲與產卵空間，形成重要的生態過渡帶，
+連接水域與陸域環境。
+</p>
+<p>
+在濕地生態中，水丁香有助於提升整體物種多樣性，
+維持生態系的穩定結構。
+</p>
+</div>
+
+<!-- 葉子動畫 -->
+<div class="leaf" style="left:10%; animation-duration:6s;"></div>
+<div class="leaf" style="left:30%; animation-duration:8s;"></div>
+<div class="leaf" style="left:60%; animation-duration:7s;"></div>
+<div class="leaf" style="left:80%; animation-duration:9s;"></div>
+
+</body>
+</html>
