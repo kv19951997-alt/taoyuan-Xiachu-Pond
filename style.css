@@ -49,19 +49,9 @@ h2{
   padding:20px;
   border-radius:15px;
   backdrop-filter:blur(6px);
-  line-height:1.9;
 }
 
-/* 圖片：通用 */
-img{
-  max-width:100%;
-  height:auto;
-  display:block;
-  margin:auto;
-  border-radius:12px;
-}
-
-/* 第一張地景圖片（縮圖用） */
+/* 📌 第一張地景圖片 */
 .landscape-img{
   width:40%;
   max-width:350px;
@@ -77,7 +67,7 @@ img{
   transform:scale(1.03);
 }
 
-/* 地圖 */
+/* 📌 互動地圖圖片 */
 .map{
   position:relative;
   max-width:900px;
@@ -89,6 +79,30 @@ img{
   max-width:600px;
   display:block;
   margin:auto;
+  border-radius:12px;
+}
+
+/* 通用圖片 */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:auto;
+}
+
+/* 圖表 */
+.chart-box{
+  max-width:900px;
+  margin:20px auto;
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:15px;
+}
+
+/* Canvas */
+canvas{
+  width:100%;
+  background:white;
   border-radius:12px;
 }
 
@@ -109,23 +123,7 @@ img{
   100%{transform:scale(1);}
 }
 
-/* 圖表 */
-.chart-box{
-  max-width:900px;
-  margin:20px auto;
-  background:rgba(255,255,255,0.08);
-  padding:20px;
-  border-radius:15px;
-}
-
-/* canvas */
-canvas{
-  width:100%;
-  background:white;
-  border-radius:12px;
-}
-
-/* 彈出視窗 */
+/* 彈出 */
 .popup{
   position:fixed;
   bottom:20px;
