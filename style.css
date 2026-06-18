@@ -139,3 +139,6 @@ canvas{
   display:none;
   max-width:400px;
 }
+body{
+  border:10px solid red !important;
+}
