@@ -1,3 +1,4 @@
+/* 🌿 背景 */
 body{
   margin:0;
   font-family:Arial,sans-serif;
@@ -8,7 +9,7 @@ body{
   line-height:1.8;
 }
 
-/* 導覽列 */
+/* 🌿 導覽列 */
 .navbar{
   position:fixed;
   top:0;
@@ -37,7 +38,7 @@ body{
   transform:translateY(-2px);
 }
 
-/* 標題 */
+/* 🌿 標題 */
 h1{
   text-align:center;
   font-size:40px;
@@ -50,7 +51,7 @@ h2{
   font-size:28px;
 }
 
-/* 卡片 */
+/* 🌿 卡片 */
 .card{
   max-width:900px;
   margin:20px auto;
@@ -61,16 +62,16 @@ h2{
   box-shadow:0 4px 15px rgba(0,0,0,0.3);
 }
 
-/* 文字 */
+/* 🌿 文字 */
 p{
   font-size:18px;
   line-height:1.8;
 }
 
-/* 第一張地景圖片 */
+/* 🌿 第一張地景圖片（你那張 class） */
 .landscape-img{
-  width:50%;
-  max-width:450px;
+  width:40%;
+  max-width:350px;
   height:auto;
   display:block;
   margin:20px auto;
@@ -83,49 +84,13 @@ p{
   transform:scale(1.03);
 }
 
-/* 一般圖片 */
-img{
-  max-width:100%;
-  height:auto;
-}
-
-/* 圖表區 */
-.chart-box{
-  max-width:900px;
-  margin:20px auto;
-  background:rgba(255,255,255,0.08);
-  padding:20px;
-  border-radius:15px;
-}
-
-/* 長條圖 */
-.bar{
-  height:25px;
-  margin:10px 0;
-  background:#66bb6a;
-  border-radius:8px;
-  animation:grow 1.8s ease-in-out;
-}
-
-@keyframes grow{
-  from{width:0;}
-}
-
-/* Canvas */
-canvas{
-  width:100%;
-  background:white;
-  border-radius:12px;
-}
-
-/* 互動地圖 */
+/* 🌿 互動地圖圖片 */
 .map{
   position:relative;
   max-width:900px;
   margin:auto;
 }
 
-/* 第二張地景圖（互動地圖） */
 .map img{
   width:70%;
   max-width:600px;
@@ -134,7 +99,31 @@ canvas{
   border-radius:12px;
 }
 
-/* 熱點 */
+/* 🌿 通用圖片（避免爆版） */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:auto;
+}
+
+/* 🌿 圖表 */
+.chart-box{
+  max-width:900px;
+  margin:20px auto;
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:15px;
+}
+
+/* 🌿 Canvas */
+canvas{
+  width:100%;
+  background:white;
+  border-radius:12px;
+}
+
+/* 🌿 熱點 */
 .hotspot{
   position:absolute;
   width:18px;
@@ -151,7 +140,7 @@ canvas{
   100%{transform:scale(1);}
 }
 
-/* 彈出視窗 */
+/* 🌿 彈出視窗 */
 .popup{
   position:fixed;
   bottom:20px;
