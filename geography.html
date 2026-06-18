@@ -7,15 +7,19 @@
 <style>
 body{
   margin:0;
-  font-family:Arial;
-  background: linear-gradient(to bottom, #1b4332, #2d6a4f, #1f5e3b);
+  font-family:Arial,sans-serif;
+  background:linear-gradient(to bottom,#1b4332,#2d6a4f,#1f5e3b);
   color:white;
   padding-top:60px;
+  font-size:18px;
+  line-height:1.8;
 }
 
+/* 導覽列 */
 .navbar{
   position:fixed;
   top:0;
+  left:0;
   width:100%;
   background:rgba(20,60,30,0.95);
   display:flex;
@@ -34,16 +38,7 @@ body{
   font-size:14px;
 }
 
-.card{
-  max-width:900px;
-  margin:20px auto;
-  background:rgba(0,0,0,0.35);
-  padding:20px;
-  border-radius:15px;
-  backdrop-filter:blur(6px);
-  line-height:1.9;
-}
-
+/* 標題 */
 h1{
   text-align:center;
 }
@@ -53,35 +48,32 @@ h2{
   padding-left:10px;
 }
 
-/* 📈 圖表 */
-.chart-box{
+/* 卡片 */
+.card{
   max-width:900px;
   margin:20px auto;
-  background:rgba(255,255,255,0.08);
+  background:rgba(0,0,0,0.35);
   padding:20px;
   border-radius:15px;
+  backdrop-filter:blur(6px);
 }
 
-.bar{
-  height:25px;
-  margin:10px 0;
-  background:#66bb6a;
-  border-radius:8px;
-  animation:grow 1.8s ease-in-out;
-}
-
-@keyframes grow{
-  from{width:0;}
-}
-
-/* 📊 canvas */
-canvas{
-  background:white;
+/* ===== 圖片統一控制 ===== */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:20px auto;
   border-radius:12px;
-  width:100%;
 }
 
-/* 🎮 互動地圖 */
+/* 👉 第一張介紹圖（你要小圖就用這個） */
+.landscape-img{
+  width:40%;
+  max-width:350px;
+}
+
+/* 👉 互動地圖圖片（保留大圖） */
 .map{
   position:relative;
   max-width:900px;
@@ -89,10 +81,11 @@ canvas{
 }
 
 .map img{
-  width:100%;
-  border-radius:12px;
+  width:70%;
+  max-width:600px;
 }
 
+/* 熱點 */
 .hotspot{
   position:absolute;
   width:18px;
@@ -109,6 +102,22 @@ canvas{
   100%{transform:scale(1);}
 }
 
+/* 圖表 */
+.chart-box{
+  max-width:900px;
+  margin:20px auto;
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:15px;
+}
+
+canvas{
+  width:100%;
+  background:white;
+  border-radius:12px;
+}
+
+/* popup */
 .popup{
   position:fixed;
   bottom:20px;
@@ -139,98 +148,65 @@ canvas{
 
 <h1>🌄 下厝埤地景與水文整合分析</h1>
 
-<!-- 基礎介紹 -->
+<!-- 介紹圖（小圖） -->
 <div class="card">
+
+<img src="images/地景.JPG" class="landscape-img">
 
 <p>
 下厝埤位於桃園台地，是典型埤塘地景之一。
 它屬於人工蓄水系統，而非天然湖泊。
-因桃園缺乏大型河川，早期居民發展出埤塘系統來儲水與灌溉。
 </p>
 
 <p>
-隨著時間演變，下厝埤從農業設施轉變為生態與景觀空間，
-成為桃園重要的水文與地景資源。
+隨著時間演變，下厝埤從農業設施轉變為生態與景觀空間。
 </p>
+
 </div>
 
 <!-- 地形 -->
 <div class="card">
 <h2>🗺️ 地形與水文背景</h2>
-
-<p>
-桃園台地由沖積扇形成，地形平坦但排水不佳。
-雨季集中、乾季缺水，使水資源極不穩定。
-</p>
-
-<p>
-因此形成埤塘系統，將雨水儲存於低地，
-再透過水圳分配使用。
-</p>
-
-<p>
-下厝埤正是這種系統的重要節點之一。
-</p>
+<p>桃園台地因排水不良形成埤塘系統。</p>
 </div>
 
 <!-- 水文 -->
 <div class="card">
 <h2>💧 水文循環</h2>
-
-<p>
-水文循環包含降雨、滲透與蒸發。
-下厝埤能調節水量與補充地下水。
-</p>
-
-<p>
-同時水體具有降溫效果，使周圍環境更穩定。
-</p>
+<p>具有蓄水與調節水資源功能。</p>
 </div>
 
 <!-- 生態 -->
 <div class="card">
-<h2>🌿 地景與生態</h2>
-
-<p>
-水域、濕地與陸地形成完整生態系。
-植物如蘆葦、水丁香提供棲息環境。
-</p>
-
-<p>
-昆蟲、青蛙（澤蛙）、蜻蜓與鳥類共同形成食物鏈。
-</p>
+<h2>🌿 生態系統</h2>
+<p>形成水域與陸域混合生態系。</p>
 </div>
 
-<!-- 折線圖 -->
+<!-- 圖表 -->
 <div class="chart-box">
-<h2>📈 時間變化折線圖（功能變化）</h2>
+<h2>📈 功能變化</h2>
 
 <canvas id="chart" height="300"></canvas>
 
 <br>
 <button onclick="play()">▶ 播放動畫</button>
-
-<p>
-埤塘功能從農業 → 混合使用 → 都市下降 → 生態保育逐漸轉型。
-</p>
 </div>
 
 <!-- 互動地圖 -->
 <div class="card">
-<h2>🎮 地景互動點擊</h2>
+<h2>🎮 地景互動</h2>
 
 <div class="map">
   <img src="images/地景.JPG">
 
-  <div class="hotspot" style="top:40%;left:30%;" onclick="show('水域：核心蓄水與生態中心')"></div>
-  <div class="hotspot" style="top:55%;left:60%;" onclick="show('濕地：植物與昆蟲棲地')"></div>
-  <div class="hotspot" style="top:30%;left:70%;" onclick="show('岸邊：人類活動與觀察區')"></div>
+  <div class="hotspot" style="top:40%;left:30%;" onclick="show('水域核心')"></div>
+  <div class="hotspot" style="top:55%;left:60%;" onclick="show('濕地區')"></div>
+  <div class="hotspot" style="top:30%;left:70%;" onclick="show('岸邊活動區')"></div>
 </div>
 </div>
 
 <div class="popup" id="popup"></div>
 
-<!-- JS -->
 <script>
 const canvas = document.getElementById("chart");
 const ctx = canvas.getContext("2d");
@@ -240,7 +216,6 @@ let index = 0;
 
 function draw(){
   ctx.clearRect(0,0,800,300);
-
   ctx.beginPath();
   ctx.moveTo(0,300-data[0]*3);
 
@@ -266,7 +241,6 @@ function show(text){
   let p = document.getElementById("popup");
   p.innerText = text;
   p.style.display="block";
-
   setTimeout(()=>p.style.display="none",2500);
 }
 
